@@ -58,7 +58,7 @@
             // 
             this.button1.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
             this.button1.Image = global::OutlookSave.Properties.Resources.icon;
-            this.button1.Label = " Run";
+            this.button1.Label = "Save";
             this.button1.Name = "button1";
             this.button1.ShowImage = true;
             // 
