@@ -26,7 +26,7 @@
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>OutlookSave</RootNamespace>
-    <AssemblyName>OutlookSave</AssemblyName>
+    <AssemblyName>OutlookSave4</AssemblyName>
     <LoadBehavior>3</LoadBehavior>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
@@ -155,9 +155,21 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="FileExplorer\DragHelper.cs" />
+    <Compile Include="FileExplorer\FileSystemComparer.cs" />
+    <Compile Include="FileExplorer\IconCash.cs" />
+    <Compile Include="FileExplorer\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileExplorer\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="FileExplorer\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -199,6 +211,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileExplorer\icons\blank.ico" />
+    <Content Include="FileExplorer\icons\column_down.png" />
+    <Content Include="FileExplorer\icons\column_up.png" />
+    <Content Include="FileExplorer\icons\Disc.ico" />
+    <Content Include="FileExplorer\icons\drive.ico" />
+    <Content Include="FileExplorer\icons\folder.ico" />
+    <Content Include="FileExplorer\icons\folderopen_tree.ico" />
+    <Content Include="FileExplorer\icons\folderopen_tree.png" />
+    <Content Include="FileExplorer\icons\folderopen_tree_old.ico" />
+    <Content Include="FileExplorer\icons\folder_tree.ico" />
+    <Content Include="FileExplorer\icons\monitor.ico" />
+    <Content Include="FileExplorer\icons\upArrow.ico" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

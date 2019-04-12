@@ -16,5 +16,11 @@ namespace OutlookSave
         {
 
         }
+
+        private void button1_Click(object sender, RibbonControlEventArgs e)
+        {
+            FileExplorer.Form1 frm = new FileExplorer.Form1();
+            frm.ShowDialog();
+        }
     }
 }
