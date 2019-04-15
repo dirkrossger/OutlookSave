@@ -22,6 +22,7 @@ namespace FileExplorer
         private const int DRAG_DISTANCE = 10;
         
         private string topLevelName = "Computer";                                                              //The name of the top level of the file system hierarchy
+        private string newPath = "";
         private string[] viewModes = { "Large icons", "Small icons", "List", "Table", "Tile" };                 //Display Modes
 
         private Dictionary<string, int> columnsFiles = new Dictionary<string, int>();                           //A set of columns for files (name, width)
@@ -209,7 +210,7 @@ namespace FileExplorer
 
                 //New name
 
-                string newPath = Path.Combine(destDirectory.FullName, srcFileSystemItem.Name);
+                newPath = Path.Combine(destDirectory.FullName, srcFileSystemItem.Name);
                 if (MoveFileObject(srcFileSystemItem, newPath))
                 {
                     //Refresh list
@@ -914,9 +915,9 @@ namespace FileExplorer
         {
             string currPath = "";
             //Current path
-            currPath = tsl_path.Text = topLevelName;
+            currPath = tsl_path.Text;
             Extension readEmail = new Extension();
-            readEmail.SaveEmailMarked("a:\\Dropbox");
+            readEmail.SaveEmailMarked(currPath);
         }
     }
 }

@@ -15,6 +15,8 @@ C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.T
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Outlook.xml
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Outlook.v4.0.Utilities.xml
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.csprojResolveAssemblyReference.cache
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\FileExplorer.Form1.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.Properties.Resources.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.Ribbon1.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.csproj.GenerateResource.Cache
