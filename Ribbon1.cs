@@ -12,6 +12,8 @@ namespace OutlookSave
 {
     public partial class Ribbon1
     {
+        public FileExplorer.Form1 frm;
+
         private void Ribbon1_Load(object sender, RibbonUIEventArgs e)
         {
 
@@ -19,7 +21,7 @@ namespace OutlookSave
 
         private void button1_Click(object sender, RibbonControlEventArgs e)
         {
-            FileExplorer.Form1 frm = new FileExplorer.Form1();
+            frm = new FileExplorer.Form1();
             frm.ShowDialog();
         }
     }

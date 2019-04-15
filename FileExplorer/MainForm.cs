@@ -9,34 +9,35 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using OutlookHandle;
 
 namespace FileExplorer
 {
     public partial class Form1 : Form
     {
-        #region Поля
+        #region Fields
 
         private const int BYTE_IN_KILOBYTE = 1000;
         private const int COLUMN_WIDTH = 120;
         private const int DRAG_DISTANCE = 10;
         
-        private string topLevelName = "Компьютер";                                                              //Имя верхего уровня иерархии файловой системы
-        private string[] viewModes = { "Крупные значки", "Мелкие значки", "Список", "Таблица", "Плитка" };      //Режимы отображеня
-        
-        private Dictionary<string, int> columnsFiles = new Dictionary<string, int>();                           //Набор столбцов для файлов (имя, ширина)
-        private Dictionary<string, int> columnsDrives = new Dictionary<string, int>();                          //Набор столбцов для дисков (имя, ширина)
-        private string[] columnsForFiles = { "Имя", "Размер", "Дата создания", "Дата изменения" };              //Столбцы для файлов и каталогов
-        private string[] columnsForDrives = { "Имя", "Тип", "Файловая система", "Общий размер", "Свободно" };   //Столбцы для дисков
-        
-        private List<FileSystemInfo> fileSystemItems = new List<FileSystemInfo>();                              //Объекты файловой системы по текущему пути
+        private string topLevelName = "Computer";                                                              //The name of the top level of the file system hierarchy
+        private string[] viewModes = { "Large icons", "Small icons", "List", "Table", "Tile" };                 //Display Modes
 
-        private IconCache iconCache = new IconCache();                                                          //Класс для работы с иконками
-        private DragHelper dragHelper = new DragHelper();                                                       //Класс хелпер для перетаскивания в ListView
+        private Dictionary<string, int> columnsFiles = new Dictionary<string, int>();                           //A set of columns for files (name, width)
+        private Dictionary<string, int> columnsDrives = new Dictionary<string, int>();                          //Column set for disks (name, width)
+        private string[] columnsForFiles = { "Name", "Size", "Date of creation", "Date of change" };              //Columns for files and directories
+        private string[] columnsForDrives = { "Name", "Type", "File system", "Overall size", "Free" };          //Columns for disks
+
+        private List<FileSystemInfo> fileSystemItems = new List<FileSystemInfo>();                              //File system objects on the current path
+
+        private IconCache iconCache = new IconCache();                                                          //Class to work with icons
+        private DragHelper dragHelper = new DragHelper();                                                       //Helper class for dragging in a ListView
 
         #endregion
 
-        #region Инициализация
-        
+        #region Initialization
+
         public Form1()
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace FileExplorer
             Application.ThreadException += Application_ThreadException;
 
             //====================================================
-            //Заполнение словарей для столбцов ListView
+            //Filling dictionaries for ListView columns
             //====================================================
 
             foreach (string column in columnsForFiles)
@@ -58,7 +59,7 @@ namespace FileExplorer
             }
 
             //====================================================
-            //Настройка комбобокса - режимы отображения
+            //Combo Box Setup - Display Modes
             //====================================================
 
             foreach (string item in viewModes)
@@ -67,33 +68,33 @@ namespace FileExplorer
             }
             toolStripComboBox1.SelectedIndex = 0;
             toolStripComboBox1.SelectedIndexChanged += toolStripComboBox1_SelectedIndexChanged;
-            
+
 
             //====================================================
-            //Конфигурирование ListView
+            //Configuring a ListView
             //====================================================
 
-            //Обработчики событий
+            //Event handlers
 
             lv_files.MouseDoubleClick += lv_files_MouseDoubleClick;
             lv_files.ColumnClick += lv_files_ColumnClick;
 
-            //Режим по-умолчанию
+            //Default mode
 
             lv_files.View = View.LargeIcon;
 
-            //Текущий путь
+            //Current path
 
             tsl_path.Text = topLevelName;
 
             //====================================================
-            //Конфигурирование TreeView
+            //Configuring a TreeView
             //====================================================
 
             tv_files.BeforeExpand += tv_files_BeforeExpand;
             tv_files.AfterSelect += tv_files_AfterSelect;
-            
-            //Редактирвание надписи
+
+            //Editing labels
 
             tv_files.AfterLabelEdit += tv_files_AfterLabelEdit;
 
@@ -132,14 +133,14 @@ namespace FileExplorer
 
         void lv_files_MouseMove(object sender, MouseEventArgs e)
         {
-            //Перетаскиваем объект в листвью списке с нажатой лкм
+            //Dragging an object in the list with LKM pressed
 
             if (e.Button == System.Windows.Forms.MouseButtons.Left && dragHelper.isSelected)
             {
                 dragHelper.currentPositionPoint.X = e.X;
                 dragHelper.currentPositionPoint.Y = e.Y;
-                
-                //Если протащили DRAG_DISTANCE пикселов - включим перетаскивание
+
+                //If DRAG_DISTANCE pixels are dragged, we will enable dragging
 
                 if (dragHelper.GetDistance() >= DRAG_DISTANCE)
                 {
@@ -166,18 +167,18 @@ namespace FileExplorer
 
         void lv_files_DragDrop(object sender, DragEventArgs e)
         {
-            //Бросок элемента - обнуление хелпера
+            //Element Roll - Helper Zero
 
             dragHelper = new DragHelper();
 
-            //Элемент на котором бросили перетаскиваемый элемент
+            //The item on which the draggable item was dropped
 
             Point clPoint = lv_files.PointToClient(new Point(e.X, e.Y));
             ListViewItem destItem = lv_files.GetItemAt(clPoint.X, clPoint.Y);
 
             if (destItem != null)
             {
-                //Проверка, каталог ли это
+                //Check if it is a directory
 
                 DirectoryInfo destDirectory = destItem.Tag as DirectoryInfo;
 
@@ -187,7 +188,7 @@ namespace FileExplorer
                 }
                 else
                 {
-                    //Не тот же ли это каталог
+                    //Is this the same directory?
 
                     ListViewItem tempLvi = (ListViewItem)e.Data.GetData(typeof(ListViewItem));
                     FileSystemInfo tempFsi = (FileSystemInfo)tempLvi.Tag;
@@ -201,24 +202,24 @@ namespace FileExplorer
                     }
                 }
 
-                //Перемещаем объект в каталог
+                //Moving an object to the directory
 
                 ListViewItem srcItem = (ListViewItem)e.Data.GetData(typeof(ListViewItem));
                 FileSystemInfo srcFileSystemItem = srcItem.Tag as FileSystemInfo;
 
-                //Новый имя
+                //New name
 
                 string newPath = Path.Combine(destDirectory.FullName, srcFileSystemItem.Name);
                 if (MoveFileObject(srcFileSystemItem, newPath))
                 {
-                    //Обновить список
+                    //Refresh list
 
                     if (SetFileSystemItems(tsl_path.Text))
                     {
                         ShowFileSystemItems();
                     }
 
-                    //Обновить дерево
+                    //Refresh tree
 
                     tv_files.SelectedNode.Collapse();
                     tv_files.SelectedNode.Expand();
@@ -226,7 +227,7 @@ namespace FileExplorer
             }
         }
 
-        //Если покинули ListView - прекратим перетаскивание
+        //If left ListView - stop dragging
 
         void lv_files_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
         {
@@ -238,63 +239,63 @@ namespace FileExplorer
 
         #endregion
 
-        #region Обработчики событий
+        #region Event handlers
 
         //====================================================
-        //Неперехваченное исключение
+        //Uncaught Exception
         //====================================================
 
         void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
         {
-            MessageBox.Show(e.Exception.Message, "Катастрофа, что-то пошло не так", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(e.Exception.Message, "Disaster, something went wrong", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         //====================================================
-        //Изменение режима отображения (выбор в комбобоксе)
+        //Changing the display mode (choice in combo box)
         //====================================================
 
         void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (toolStripComboBox1.SelectedItem.ToString())
             {
-                case "Крупные значки":
+                case "Large icons":
                     lv_files.View = View.LargeIcon;
                     break;
-                case "Мелкие значки":
+                case "Small icons":
                     lv_files.View = View.SmallIcon;
                     break;
-                case "Таблица":
+                case "Table":
                     lv_files.View = View.Details;
                     lv_files.FullRowSelect = true;
                     break;
-                case "Список":
+                case "List":
                     lv_files.View = View.List;
                     break;
-                case "Плитка":
+                case "Tile":
                     lv_files.View = View.Tile;
                     break;
                 default:
-                    MessageBox.Show("Неизвестный режим отображения", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Unknown display mode", "Mistake", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
             }
         }
 
         //====================================================
-        //Клик по элементу в ListView
+        //Click an item in the ListView
         //====================================================
 
         void lv_files_MouseDoubleClick(object sender, MouseEventArgs e)
         {
 
-            //Получаем элемент, по которому совершён клик (по координатам)
+            //Get the element that clicked (by coordinates)
 
             ListViewItem selection = lv_files.GetItemAt(e.X, e.Y);
 
-            //Получаем связанный с ним объект
+            //Get the object associated with it
 
             object tag = selection.Tag;
 
-            //Файл - запускаем
+            //File - run
 
             if (tag is FileInfo)
             {
@@ -302,7 +303,7 @@ namespace FileExplorer
                 return;
             }
 
-            //Получаем файлы/каталоги корня диска
+            //We receive files / directories of a root of a disk
 
             string path = null;
             if (tag is DriveInfo)
@@ -314,26 +315,26 @@ namespace FileExplorer
                 path = ((DirectoryInfo)tag).FullName;
             }
 
-            //Переход по пути
+            //Go on the way
 
             if (SetFileSystemItems(path))
             {
                 ShowFileSystemItems();
                 tsl_path.Text = path;
 
-                //Открыть путь в дереве
+                //Open the path in the tree
 
                 ShowPathInTree(path);
             }
         }
 
         //====================================================
-        //Выход на уровень вверх (кнопка)
+        //Up level (button)
         //====================================================
 
         void tsb_upLevel_Click(object sender, EventArgs e)
         {
-            //Текущий каталог
+            //Current directory
 
             string path = tsl_path.Text;
 
@@ -344,11 +345,11 @@ namespace FileExplorer
 
             DirectoryInfo currentDirectory = new DirectoryInfo(path);
 
-            //Родительский каталог
+            //Parent directory
 
             DirectoryInfo parentDirectory = currentDirectory.Parent;
 
-            //Смена каталога
+            //Change directory
 
             if (parentDirectory != null)
             {
@@ -364,34 +365,34 @@ namespace FileExplorer
         }
 
         //====================================================
-        //Клик по столбцу - сортировка
+        //Click on the column - sorting
         //====================================================
 
         void lv_files_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            //Диски не сортируем
+            //Disks do not sort
 
             if (tsl_path.Text == topLevelName)
             {
                 return;
             }
 
-            //Индекс столца по которому кликнули
+            //Index of the table clicked on
 
             int currentColumn = e.Column;
 
-            //Получаем текущий 'Сравнитель'
+            //We get the current 'Comparative'
 
             FileSystemComparer currentComparer = (FileSystemComparer)lv_files.ListViewItemSorter;
 
-            //Если его нет - создадим (0 столбец, возрастание)
+            //If not, create one (0 column, ascending)
 
             if (currentComparer == null)
             {
                 currentComparer = new FileSystemComparer();
             }
-            
-            //Если клик по столбцу по которому выполнена сортировка - меняем направление и иконку
+
+            //If you click on the column on which the sorting is performed, change the direction and the icon
 
             if (currentColumn == currentComparer.columnIndex)
             {
@@ -407,7 +408,7 @@ namespace FileExplorer
                 }
             }
 
-            //По новому столбцу - настраиваем компарер и иконку
+            //On a new column - set up a comparer and an icon
 
             else
             {
@@ -420,14 +421,14 @@ namespace FileExplorer
                 lv_files.Columns[currentColumn].ImageIndex = 2;
             }
 
-            //Сортируем
+            //Sorting
 
             lv_files.ListViewItemSorter = currentComparer;
             lv_files.Sort();
         }
-        
+
         //====================================================
-        //Заполнение узла дерева при распахивании
+        //Filling a tree node when plowing
         //====================================================
 
         void tv_files_BeforeExpand(object sender, TreeViewCancelEventArgs e)
@@ -455,7 +456,7 @@ namespace FileExplorer
         }
 
         //====================================================
-        //Выбор узла дерева - выводим содержимое в ListView
+        //Selecting a tree node - display the contents in a ListView
         //====================================================
 
         void tv_files_AfterSelect(object sender, TreeViewEventArgs e)
@@ -463,11 +464,11 @@ namespace FileExplorer
             TreeNode selectedNode = e.Node;
             string currentPath = e.Node.FullPath;
 
-            //Откроем текущий узел
+            //Open the current node
 
             selectedNode.Expand();
 
-            //Отразим в списке текущий узел
+            //Reflect the current node in the list
 
             if (SetFileSystemItems(currentPath))
             {
@@ -475,7 +476,7 @@ namespace FileExplorer
                 tsl_path.Text = currentPath;
             }
 
-            //Вернём активный узел если не удалось перейти в каталог
+            //We will return the active node if we could not go to the directory
 
             else
             {
@@ -484,12 +485,12 @@ namespace FileExplorer
         }
 
         //====================================================
-        //Переименование папки при редактировании узла в дереве
+        //Rename a folder when editing a node in the tree
         //====================================================
 
         void tv_files_AfterLabelEdit(object sender, NodeLabelEditEventArgs e)
         {
-            //Текущий путь и новое имя
+            //Current path and new name
 
             string currentPath = e.Node.FullPath;
             string newDirectoryName = e.Label;
@@ -500,21 +501,21 @@ namespace FileExplorer
                 return;
             }
 
-            //Новое полное имя папки
+            //New full folder name
 
             string newFullName = Path.Combine(e.Node.Parent.FullPath, newDirectoryName);
 
-            //Текущий каталог
+            //Current directory
 
             DirectoryInfo currentDirectory = new DirectoryInfo(currentPath);
 
-            //Переименование
+            //Rename
 
             try
             {
                 currentDirectory.MoveTo(newFullName);
 
-                //Обновить путь и содержимое списка
+                //Update path and list contents
 
                 if (SetFileSystemItems(newFullName))
                 {
@@ -524,35 +525,35 @@ namespace FileExplorer
             }
             catch
             {
-                MessageBox.Show("Невозможно переименовать каталог", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cannot rename directory", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 e.CancelEdit = true;
             }
         }
-        
+
         #endregion
 
-        #region Работа с файловой системой
+        #region Work with file system
 
         //====================================================
-        //Получить список файлов и каталогов для указанного пути
+        //Get a list of files and directories for the specified path
         //====================================================
 
         public bool SetFileSystemItems(string path)
         {
-            //Проверка доступа
-            
+            //Access check
+
             try
             {
                 string[] access = Directory.GetDirectories(path);
             }
             catch 
             {
-                MessageBox.Show("Невозможно прочитать каталог", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Unable to read directory", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
 
 
-            //Очистка списка
+            //Clearing the list
 
             if (fileSystemItems != null && fileSystemItems.Count != 0)
             {
@@ -581,7 +582,7 @@ namespace FileExplorer
         }
 
         //====================================================
-        //Отобразить список каталогов/файлов в ListView
+        //Display a list of directories / files in a ListView
         //====================================================
 
         private void ShowFileSystemItems()
@@ -597,15 +598,15 @@ namespace FileExplorer
                 return;
             }
 
-            //Установка столбцов для папок
+            //Setting Folder Columns
 
-            SetColumsForFolders();                          
+            SetColumsForFolders();
 
-            //Очистим кэш иконок и списки изображений
+            //Clear the cache of icons and image lists
 
             iconCache.ClearIconCashAndLists(il_DiscFoldersFilesIcons_Small, il_DiscFoldersFilesIcons_Large);
 
-            //Заполнение списка
+            //Filling the list
 
             ListViewItem lviFile = null;
             foreach (FileSystemInfo file in fileSystemItems)
@@ -614,16 +615,16 @@ namespace FileExplorer
                 lviFile = new ListViewItem();
                 lviFile.Tag = file;
                 lviFile.Text = file.Name;
-                
-                //Каталог
-                
+
+                //Catalog
+
                 if (file is DirectoryInfo)
                 {
                     lviFile.ImageIndex = 1;
-                    lviFile.SubItems.Add("Каталог");
+                    lviFile.SubItems.Add("Catalog");
                 }
 
-                //Файл
+                //File
 
                 else if (file is FileInfo)
                 {
@@ -636,21 +637,21 @@ namespace FileExplorer
                     string fileExtention = currentFile.Extension.ToLower();
 
                     //====================================================
-                    //Назначение иконку файлу
+                    //Assigning an icon to a file
                     //====================================================
 
-                    //Поиск в кеше
+                    //Search cache
 
                     int iconIndex = iconCache.GetIconIndexByExtention(fileExtention);
-                    
-                    //Есть в кэше
-                    
+
+                    //Cached
+
                     if (iconIndex != -1)
                     {
                         lviFile.ImageIndex = iconIndex;
                     }
 
-                    //Нет в кэше
+                    //Not in cache
 
                     else
                     {
@@ -668,14 +669,14 @@ namespace FileExplorer
         }
 
         //====================================================
-        //Отобразить список дисков
+        //Display a list of disks
         //====================================================
 
         private void ShowDrives()
         {
             tsl_path.Text = topLevelName;
 
-            //Очистка
+            //Cleaning
 
             if (lv_files != null && lv_files.Items.Count != 0)
             {
@@ -686,7 +687,7 @@ namespace FileExplorer
                 tv_files.Nodes.Clear();
             }
 
-            //Получение дисков (доступных для чтения)
+            //Getting discs (available for reading)
 
             DriveInfo[] discs = DriveInfo.GetDrives();
 
@@ -698,7 +699,7 @@ namespace FileExplorer
 
             #region ListView
 
-            //Настройка столбцов для дисков
+            //Setting up columns for disks
 
             SetColumsForDrives();
 
@@ -729,12 +730,12 @@ namespace FileExplorer
             {
                 if(disc.IsReady)
                 {
-                    //Добавить диск
+                    //Add drive
 
                     TreeNode tnDisc = new TreeNode(disc.Name, 2, 2);
                     tv_files.Nodes.Add(tnDisc);
-                
-                    //Добавить "+", если есть содержимое
+
+                    //Add "+" if there is content
 
                     try
                     {
@@ -753,20 +754,20 @@ namespace FileExplorer
         }
 
         //====================================================
-        //Выделить в дереве узел по пути
+        //Select a node in the tree on the way
         //====================================================
 
         private void ShowPathInTree(string path)
         {
-            //Массив директорий
+            //Directory Array
 
             string[] directories = path.Split('\\');
 
-            //Корневой каталог
-            
+            //Root directory
+
             string root = Path.GetPathRoot(path);
 
-            //Откроем корневой катлог
+            //Open the root directory
 
             TreeNode currentNode = null;
             foreach (TreeNode treeNode in tv_files.Nodes)
@@ -779,18 +780,18 @@ namespace FileExplorer
                 }
             }
 
-            //Ищем каталоги и открываем их в дереве
+            //We are looking for catalogs and open them in the tree.
 
             for (int i = 1; i < directories.Length; i++)
             {
-                //Пропускаем директории без имени
+                //Skipping unnamed directories
 
                 if (directories[i].Length == 0) 
                 {
                     continue;
                 }
 
-                //Ищем каталог
+                //Looking for a catalog
 
                 foreach (TreeNode treeNode in currentNode.Nodes)
                 {
@@ -802,7 +803,7 @@ namespace FileExplorer
                 }
             }
 
-            //Выберем узел в дереве
+            //Select a node in the tree
 
             tv_files.SelectedNode = currentNode;
         }
@@ -814,29 +815,29 @@ namespace FileExplorer
             {
                 if (fsObject is DirectoryInfo)
                 {
-                    message = "Не возможно переместить каталог";
+                    message = "Cannot move directory";
                     ((DirectoryInfo)fsObject).MoveTo(newPath);
                 }
                 else
                 {
-                    message = "Не возможно переместить файл";
+                    message = "Cannot move file";
                     ((FileInfo)fsObject).MoveTo(newPath);
                 }
                 return true;
             }
             catch
             {
-                MessageBox.Show(message, "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(message, "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
         }
-        
+
         #endregion
 
-        #region Столбцы
+        #region Columns
 
         //====================================================
-        //Установить столбцы для режима таблицы(colums - словарь: имя / ширина)
+        //Set columns for table mode (colums - dictionary: name / width)
         //====================================================
 
         private void SetColumsForDrives()
@@ -863,13 +864,13 @@ namespace FileExplorer
             {
                 lv_files.Columns.Clear();
             }
-            
-            //Сортировка по умолчанию
+
+            //Default Sort
 
             int sortedColumnIndex = 0;
             FileSystemComparer.SORTORDER sortOrder = FileSystemComparer.SORTORDER.ASC;
 
-            //Получаем 'Сравнитель' для ListView читаем параметры сортировки
+            //We get the 'Comparison' for the ListView; we read the collation
 
             FileSystemComparer currentComparer = (FileSystemComparer)lv_files.ListViewItemSorter;
             if (currentComparer != null)
@@ -878,7 +879,7 @@ namespace FileExplorer
                 sortOrder = currentComparer.sortOrder;
             }
 
-            //Создаём столцы, с установленной иконкой
+            //Create tables, with the icon installed
 
             ColumnHeader column = null;
             int currentColumnIndex = 0;
@@ -887,9 +888,9 @@ namespace FileExplorer
                 column = new ColumnHeader();
                 column.Text = item.Key;
                 column.Width = item.Value;
-                
-                //Иконка для столца сортированного столбца
-                
+
+                //Icon for the column sorted column
+
                 if (sortedColumnIndex == currentColumnIndex)
                 {
                     if (sortOrder == FileSystemComparer.SORTORDER.ASC)
@@ -908,5 +909,14 @@ namespace FileExplorer
         }
 
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string currPath = "";
+            //Current path
+            currPath = tsl_path.Text = topLevelName;
+            Extension readEmail = new Extension();
+            readEmail.SaveEmailMarked("a:\\Dropbox");
+        }
     }
 }

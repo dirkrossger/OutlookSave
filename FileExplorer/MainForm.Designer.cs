@@ -38,14 +38,16 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tv_files = new System.Windows.Forms.TreeView();
-            this.il_ForTree = new System.Windows.Forms.ImageList(this.components);
+            this.il_DiscFoldersFilesIcons_Small = new System.Windows.Forms.ImageList(this.components);
             this.lv_files = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.il_DiscFoldersFilesIcons_Large = new System.Windows.Forms.ImageList(this.components);
-            this.il_DiscFoldersFilesIcons_Small = new System.Windows.Forms.ImageList(this.components);
+            this.il_ForTree = new System.Windows.Forms.ImageList(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -63,7 +65,7 @@
             this.toolStripLabel2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(884, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(949, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -119,8 +121,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.lv_files);
-            this.splitContainer1.Size = new System.Drawing.Size(860, 452);
-            this.splitContainer1.SplitterDistance = 286;
+            this.splitContainer1.Size = new System.Drawing.Size(925, 455);
+            this.splitContainer1.SplitterDistance = 304;
             this.splitContainer1.TabIndex = 0;
             this.splitContainer1.TabStop = false;
             // 
@@ -136,25 +138,17 @@
             this.tv_files.Location = new System.Drawing.Point(3, 3);
             this.tv_files.Name = "tv_files";
             this.tv_files.SelectedImageIndex = 3;
-            this.tv_files.Size = new System.Drawing.Size(280, 446);
+            this.tv_files.Size = new System.Drawing.Size(302, 452);
             this.tv_files.TabIndex = 0;
             // 
-            // il_ForTree
+            // il_DiscFoldersFilesIcons_Small
             // 
-            this.il_ForTree.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("il_ForTree.ImageStream")));
-            this.il_ForTree.TransparentColor = System.Drawing.Color.Transparent;
-            this.il_ForTree.Images.SetKeyName(0, "folder_tree.ico");
-            this.il_ForTree.Images.SetKeyName(1, "folderopen_tree.png");
-            this.il_ForTree.Images.SetKeyName(2, "drive.ico");
-            this.il_ForTree.Images.SetKeyName(3, "");
-            this.il_ForTree.Images.SetKeyName(4, "");
-            this.il_ForTree.Images.SetKeyName(5, "");
-            this.il_ForTree.Images.SetKeyName(6, "");
-            this.il_ForTree.Images.SetKeyName(7, "");
-            this.il_ForTree.Images.SetKeyName(8, "");
-            this.il_ForTree.Images.SetKeyName(9, "");
-            this.il_ForTree.Images.SetKeyName(10, "");
-            this.il_ForTree.Images.SetKeyName(11, "");
+            this.il_DiscFoldersFilesIcons_Small.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("il_DiscFoldersFilesIcons_Small.ImageStream")));
+            this.il_DiscFoldersFilesIcons_Small.TransparentColor = System.Drawing.Color.Transparent;
+            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(0, "drive.ico");
+            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(1, "folder.ico");
+            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(2, "column_down.png");
+            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(3, "column_up.png");
             // 
             // lv_files
             // 
@@ -171,7 +165,7 @@
             this.lv_files.Location = new System.Drawing.Point(3, 3);
             this.lv_files.MultiSelect = false;
             this.lv_files.Name = "lv_files";
-            this.lv_files.Size = new System.Drawing.Size(564, 449);
+            this.lv_files.Size = new System.Drawing.Size(614, 452);
             this.lv_files.SmallImageList = this.il_DiscFoldersFilesIcons_Small;
             this.lv_files.TabIndex = 0;
             this.lv_files.UseCompatibleStateImageBehavior = false;
@@ -205,20 +199,51 @@
             this.il_DiscFoldersFilesIcons_Large.Images.SetKeyName(2, "column_down.png");
             this.il_DiscFoldersFilesIcons_Large.Images.SetKeyName(3, "column_up.png");
             // 
-            // il_DiscFoldersFilesIcons_Small
+            // il_ForTree
             // 
-            this.il_DiscFoldersFilesIcons_Small.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("il_DiscFoldersFilesIcons_Small.ImageStream")));
-            this.il_DiscFoldersFilesIcons_Small.TransparentColor = System.Drawing.Color.Transparent;
-            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(0, "drive.ico");
-            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(1, "folder.ico");
-            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(2, "column_down.png");
-            this.il_DiscFoldersFilesIcons_Small.Images.SetKeyName(3, "column_up.png");
+            this.il_ForTree.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("il_ForTree.ImageStream")));
+            this.il_ForTree.TransparentColor = System.Drawing.Color.Transparent;
+            this.il_ForTree.Images.SetKeyName(0, "folder_tree.ico");
+            this.il_ForTree.Images.SetKeyName(1, "folderopen_tree.png");
+            this.il_ForTree.Images.SetKeyName(2, "drive.ico");
+            this.il_ForTree.Images.SetKeyName(3, "");
+            this.il_ForTree.Images.SetKeyName(4, "");
+            this.il_ForTree.Images.SetKeyName(5, "");
+            this.il_ForTree.Images.SetKeyName(6, "");
+            this.il_ForTree.Images.SetKeyName(7, "");
+            this.il_ForTree.Images.SetKeyName(8, "");
+            this.il_ForTree.Images.SetKeyName(9, "");
+            this.il_ForTree.Images.SetKeyName(10, "");
+            this.il_ForTree.Images.SetKeyName(11, "");
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Location = new System.Drawing.Point(363, 489);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 21);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Ok";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button2.Location = new System.Drawing.Point(459, 489);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 21);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Cancel";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 492);
+            this.ClientSize = new System.Drawing.Size(949, 527);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -255,7 +280,8 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.TreeView tv_files;
         private System.Windows.Forms.ImageList il_ForTree;
-
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
