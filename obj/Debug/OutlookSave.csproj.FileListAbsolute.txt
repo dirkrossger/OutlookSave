@@ -1,7 +1,7 @@
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave.dll
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave.pdb
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave.dll.manifest
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave.vsto
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.dll
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.pdb
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.dll.manifest
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.vsto
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Common.dll
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.dll
@@ -15,10 +15,9 @@ C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.T
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Outlook.xml
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Outlook.v4.0.Utilities.xml
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.csprojResolveAssemblyReference.cache
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\FileExplorer.Form1.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.Properties.Resources.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.Ribbon1.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.csproj.GenerateResource.Cache
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.dll
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.pdb
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSaveAddIn.dll
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSaveAddIn.pdb
