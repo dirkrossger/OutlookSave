@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_09EC1258371843AB9C765DA1B05B01FB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2CE7F75827FD4543ADF147C08CA88302"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_349206AE0127EA4F3A10EA86065D58FA"
         "OwnerKey" = "8:_634B498DFB2C4712A14985AA15FC29B5"
         "MsmSig" = "8:_UNDEFINED"
@@ -33,8 +45,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3CF4D9A7F1E64D7793CFF09B10B6B536"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_45F37B0DCBB91DF5E8E412A3429AB5AF"
         "OwnerKey" = "8:_634B498DFB2C4712A14985AA15FC29B5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4A789B55276941D7ADBC670D403C6F4B"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -57,7 +81,43 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6301B100B9E246A6B4E9E779702B8208"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6347C93925F942AF92DFF443FA7952FB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_634B498DFB2C4712A14985AA15FC29B5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6AD8B121D6B6484EBD3DAE243925825E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_721C72D94FF34595A69C1F4C40045781"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8116D548F2B94D198F66B420457BD2A5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_81540247F41E49B29D67C0115DD27889"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -65,6 +125,12 @@
         {
         "MsmKey" = "8:_841731D01DA15B0EF939A2B914C3EB65"
         "OwnerKey" = "8:_634B498DFB2C4712A14985AA15FC29B5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_87D872D6831B42BDB3EDC3C1A462D104"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -93,13 +159,19 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BEBE07C077E6471B8CAB668711F6EADA"
+        "MsmKey" = "8:_C7760787AF7D4CE68FED692B863A55EC"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_FADC3A3A77C04037BA6D4235E20DD056"
+        "MsmKey" = "8:_C9B4DF1D59FB42C4B5B5127CA17A2961"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E6F5830C0A8B4420A617735E13C5F076"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -270,6 +342,46 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_09EC1258371843AB9C765DA1B05B01FB"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\blank.ico"
+            "TargetName" = "8:blank.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2CE7F75827FD4543ADF147C08CA88302"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\column_up.png"
+            "TargetName" = "8:column_up.png"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_349206AE0127EA4F3A10EA86065D58FA"
             {
             "AssemblyRegister" = "3:1"
@@ -286,7 +398,7 @@
             "SourcePath" = "8:Microsoft.Office.Tools.Common.v4.0.Utilities.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -306,7 +418,27 @@
             "SourcePath" = "8:..\\bin\\Debug\\OutlookSaveAddIn.vsto"
             "TargetName" = "8:OutlookSaveAddIn.vsto"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3CF4D9A7F1E64D7793CFF09B10B6B536"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\drive.ico"
+            "TargetName" = "8:drive.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -337,7 +469,7 @@
             "SourcePath" = "8:stdole.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -352,12 +484,32 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4A789B55276941D7ADBC670D403C6F4B"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\folderopen_tree.ico"
+            "TargetName" = "8:folderopen_tree.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_500D6643AEE04D149155F8630137B0F8"
             {
             "SourcePath" = "8:..\\bin\\Debug\\OutlookSaveAddIn.dll.manifest"
             "TargetName" = "8:OutlookSaveAddIn.dll.manifest"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -388,7 +540,7 @@
             "SourcePath" = "8:Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -419,7 +571,7 @@
             "SourcePath" = "8:Microsoft.Office.Tools.v4.0.Framework.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -432,6 +584,126 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6301B100B9E246A6B4E9E779702B8208"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\Disc.ico"
+            "TargetName" = "8:Disc.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6347C93925F942AF92DFF443FA7952FB"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\column_down.png"
+            "TargetName" = "8:column_down.png"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6AD8B121D6B6484EBD3DAE243925825E"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\folder.ico"
+            "TargetName" = "8:folder.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_721C72D94FF34595A69C1F4C40045781"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\folderopen_tree_old.ico"
+            "TargetName" = "8:folderopen_tree_old.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8116D548F2B94D198F66B420457BD2A5"
+            {
+            "SourcePath" = "8:infra.ico"
+            "TargetName" = "8:infra.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_81540247F41E49B29D67C0115DD27889"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\monitor.ico"
+            "TargetName" = "8:monitor.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_841731D01DA15B0EF939A2B914C3EB65"
@@ -450,7 +722,7 @@
             "SourcePath" = "8:Microsoft.Office.Tools.Outlook.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -463,6 +735,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_87D872D6831B42BDB3EDC3C1A462D104"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\upArrow.ico"
+            "TargetName" = "8:upArrow.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A72432F677FE5E3DEEA244827B9CBDD9"
@@ -481,7 +773,7 @@
             "SourcePath" = "8:Microsoft.VisualStudio.Tools.Applications.Runtime.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -512,7 +804,7 @@
             "SourcePath" = "8:Microsoft.Office.Tools.Common.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -527,12 +819,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BEBE07C077E6471B8CAB668711F6EADA"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C7760787AF7D4CE68FED692B863A55EC"
             {
-            "SourcePath" = "8:infra.ico"
-            "TargetName" = "8:infra.ico"
+            "SourcePath" = "8:..\\FileExplorer\\icons\\folderopen_tree.png"
+            "TargetName" = "8:folderopen_tree.png"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -547,12 +839,32 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FADC3A3A77C04037BA6D4235E20DD056"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C9B4DF1D59FB42C4B5B5127CA17A2961"
+            {
+            "SourcePath" = "8:..\\FileExplorer\\icons\\folder_tree.ico"
+            "TargetName" = "8:folder_tree.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E6F5830C0A8B4420A617735E13C5F076"
             {
             "SourcePath" = "8:intro.bmp"
             "TargetName" = "8:intro.bmp"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -583,7 +895,7 @@
             "SourcePath" = "8:Microsoft.Office.Tools.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -606,7 +918,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
             {
-            "DefaultLocation" = "8:[AppDataFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[AppDataFolder][Infrasolutions]\\[OutlookSave]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -614,6 +926,50 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_D3170B5A1D3E47CF89956183485688CA"
+                    {
+                    "Name" = "8:Infrasolutions"
+                    "AlwaysCreate" = "11:TRUE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_699655BFCA1F4E339668B247508255BF"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_B6E8CBACD36F4DC5A8E59387A5251F9B"
+                            {
+                            "Name" = "8:OutlookSave"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_CFCDD27DC5504390B4805FD06C8411E4"
+                                "Folders"
+                                {
+                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_7B132478C16C40B290091FD9634600A2"
+                                    {
+                                    "Name" = "8:FileExplorer"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "Condition" = "8:"
+                                    "Transitive" = "11:FALSE"
+                                    "Property" = "8:_3A5E1999B3FB4DD6911C4127BE4BD9A7"
+                                        "Folders"
+                                        {
+                                            "{9EF0B969-E518-4E46-987F-47570745A589}:_43EF2101110E4A99A1BFC167F642060D"
+                                            {
+                                            "Name" = "8:icons"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "Property" = "8:_0F06139B4C244956870E474227E7DC2E"
+                                                "Folders"
+                                                {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -633,7 +989,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OutlookSave"
         "ProductCode" = "8:{FFF27C26-26B2-43EF-80B6-30B2FEAAFDFB}"
-        "PackageCode" = "8:{5D91C327-188E-46BF-9C78-36D8021DD1FD}"
+        "PackageCode" = "8:{E7A89B26-0848-48C2-B2BA-36784F7E8FA4}"
         "UpgradeCode" = "8:{6BCF106D-DDC4-42F3-B131-C4E0B372049D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -650,7 +1006,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Outlook Save Emails"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_BEBE07C077E6471B8CAB668711F6EADA"
+        "ARPPRODUCTICON" = "8:_8116D548F2B94D198F66B420457BD2A5"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -676,9 +1032,9 @@
                         {
                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_528C4C127E1E4E579D33B7DD1BF29507"
                             {
-                            "Name" = "8:[Manufacturer]"
+                            "Name" = "8:[Infrasolutions]"
                             "Condition" = "8:"
-                            "AlwaysCreate" = "11:FALSE"
+                            "AlwaysCreate" = "11:TRUE"
                             "DeleteAtUninstall" = "11:FALSE"
                             "Transitive" = "11:FALSE"
                                 "Keys"
@@ -739,7 +1095,7 @@
                                                     {
                                                     "Name" = "8:Addins"
                                                     "Condition" = "8:"
-                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "AlwaysCreate" = "11:TRUE"
                                                     "DeleteAtUninstall" = "11:FALSE"
                                                     "Transitive" = "11:FALSE"
                                                         "Keys"
@@ -748,14 +1104,46 @@
                                                             {
                                                             "Name" = "8:OutlookSave"
                                                             "Condition" = "8:"
-                                                            "AlwaysCreate" = "11:FALSE"
-                                                            "DeleteAtUninstall" = "11:FALSE"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
                                                             "Transitive" = "11:FALSE"
                                                                 "Keys"
                                                                 {
                                                                 }
                                                                 "Values"
                                                                 {
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_38430D7086AE40A38EE14FB162034920"
+                                                                    {
+                                                                    "Name" = "8:Manifest"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:1"
+                                                                    "Value" = "8:[TARGETDIR]\\Infrasolutions\\OutlookSave\\OutlookSaveAddIn.vsto"
+                                                                    }
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_7861060DB8B84EDBA182A4FC892F01D6"
+                                                                    {
+                                                                    "Name" = "8:FriendlyName"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:1"
+                                                                    "Value" = "8:OutlookSave"
+                                                                    }
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B5562B941FDB422DBEED45E3A03A4236"
+                                                                    {
+                                                                    "Name" = "8:LoadBehavior"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:3"
+                                                                    "Value" = "3:3"
+                                                                    }
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E4489EE199C84F98BD07D5AEFAD4F851"
+                                                                    {
+                                                                    "Name" = "8:Description"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:1"
+                                                                    "Value" = "8:OutlookSave"
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -924,7 +1312,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_FADC3A3A77C04037BA6D4235E20DD056"
+                            "Value" = "8:_E6F5830C0A8B4420A617735E13C5F076"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -947,7 +1335,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_FADC3A3A77C04037BA6D4235E20DD056"
+                            "Value" = "8:_E6F5830C0A8B4420A617735E13C5F076"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -1106,7 +1494,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_FADC3A3A77C04037BA6D4235E20DD056"
+                            "Value" = "8:_E6F5830C0A8B4420A617735E13C5F076"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -1151,7 +1539,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
                             "Setting" = "3:2"
-                            "Value" = "8:_FADC3A3A77C04037BA6D4235E20DD056"
+                            "Value" = "8:_E6F5830C0A8B4420A617735E13C5F076"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -1182,7 +1570,7 @@
             "SourcePath" = "8:..\\obj\\Debug\\OutlookSaveAddIn.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_87F7B1B1C9FA43F4AB6BE009EEFA0AED"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
