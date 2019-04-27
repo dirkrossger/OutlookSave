@@ -21,7 +21,7 @@ namespace FileExplorer
         private const int COLUMN_WIDTH = 120;
         private const int DRAG_DISTANCE = 10;
         
-        private string topLevelName = "Computer";                                                              //The name of the top level of the file system hierarchy
+        private string topLevelName = "C:\\";                                                              //The name of the top level of the file system hierarchy
         private string newPath = "";
         private string[] viewModes = { "Large icons", "Small icons", "List", "Table", "Tile" };                 //Display Modes
 
@@ -86,7 +86,7 @@ namespace FileExplorer
 
             //Current path
 
-            tsl_path.Text = topLevelName;
+            tsl_path.Text = EnvironmentExt.Get("OutlookSave");
 
             //====================================================
             //Configuring a TreeView
@@ -431,9 +431,10 @@ namespace FileExplorer
         //====================================================
         //Filling a tree node when plowing
         //====================================================
-
+        private bool firstime;
         void tv_files_BeforeExpand(object sender, TreeViewCancelEventArgs e)
         {
+            firstime = true;
             TreeNode currentNode = e.Node;
             
             currentNode.Nodes.Clear();
@@ -459,15 +460,20 @@ namespace FileExplorer
         //====================================================
         //Selecting a tree node - display the contents in a ListView
         //====================================================
-
+        private string currentPath;
         void tv_files_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            TreeNode selectedNode = e.Node;
-            string currentPath = e.Node.FullPath;
+            if (!firstime)
+                currentPath = tsl_path.Text;
+            else
+            {
+                firstime = true;
+                TreeNode selectedNode = e.Node;
+                currentPath = e.Node.FullPath;
 
-            //Open the current node
-
-            selectedNode.Expand();
+                //Open the current node
+                selectedNode.Expand();
+            }
 
             //Reflect the current node in the list
 
@@ -675,7 +681,7 @@ namespace FileExplorer
 
         private void ShowDrives()
         {
-            tsl_path.Text = topLevelName;
+            //tsl_path.Text = topLevelName;
 
             //Cleaning
 
@@ -913,11 +919,20 @@ namespace FileExplorer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string currPath = "";
+            this.Close();
+
             //Current path
-            currPath = tsl_path.Text;
+            currentPath = tsl_path.Text;
             Extension readEmail = new Extension();
-            readEmail.SaveEmailMarked(currPath);
+            readEmail.SaveEmailMarked(currentPath);
+
+            EnvironmentExt.Set("OutlookSave", tsl_path.Text);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

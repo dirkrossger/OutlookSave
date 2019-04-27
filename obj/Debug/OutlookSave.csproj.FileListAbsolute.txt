@@ -1,7 +1,7 @@
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.dll
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.pdb
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.dll.manifest
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSaveAddIn.vsto
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave1.0.1.dll
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave1.0.1.pdb
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave1.0.1.dll.manifest
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\OutlookSave1.0.1.vsto
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Common.dll
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\bin\Debug\Microsoft.Office.Tools.dll
@@ -19,5 +19,5 @@ C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\FileExplorer.Form1
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.Properties.Resources.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.Ribbon1.resources
 C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave.csproj.GenerateResource.Cache
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSaveAddIn.dll
-C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSaveAddIn.pdb
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave1.0.1.dll
+C:\Users\Dick\Documents\GitExt_projects\OutlookSave\obj\Debug\OutlookSave1.0.1.pdb

@@ -26,7 +26,7 @@
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>OutlookSave</RootNamespace>
-    <AssemblyName>OutlookSaveAddIn</AssemblyName>
+    <AssemblyName>OutlookSave1.0.1</AssemblyName>
     <LoadBehavior>3</LoadBehavior>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
@@ -166,6 +166,7 @@
   -->
   <ItemGroup>
     <Compile Include="FileExplorer\DragHelper.cs" />
+    <Compile Include="FileExplorer\EnvironmentExt.cs" />
     <Compile Include="FileExplorer\FileSystemComparer.cs" />
     <Compile Include="FileExplorer\IconCash.cs" />
     <Compile Include="FileExplorer\MainForm.cs">

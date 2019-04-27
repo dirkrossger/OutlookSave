@@ -10,3 +10,8 @@ https://www.ecanarys.com/Blogs/ArticleID/72/Deploying-an-Outlook-2010-Add-in-Usi
 
 2019-04-20
 Create Favorite method to add paths
+
+2019-04-27
+v1.0.1
+*fileexplorer: implement registry save paths
+*form close

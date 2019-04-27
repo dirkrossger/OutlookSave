@@ -57,6 +57,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsb_upLevel,
             this.toolStripLabel1,
@@ -65,7 +66,7 @@
             this.toolStripLabel2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(949, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1265, 28);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -75,14 +76,14 @@
             this.tsb_upLevel.Image = global::OutlookSave.Properties.Resources.column_up;
             this.tsb_upLevel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_upLevel.Name = "tsb_upLevel";
-            this.tsb_upLevel.Size = new System.Drawing.Size(23, 22);
+            this.tsb_upLevel.Size = new System.Drawing.Size(24, 25);
             this.tsb_upLevel.Text = "Up";
             this.tsb_upLevel.Click += new System.EventHandler(this.tsb_upLevel_Click);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(77, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(94, 25);
             this.toolStripLabel1.Text = "Current path:";
             // 
             // tsl_path
@@ -90,20 +91,20 @@
             this.tsl_path.BackColor = System.Drawing.SystemColors.Control;
             this.tsl_path.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.tsl_path.Name = "tsl_path";
-            this.tsl_path.Size = new System.Drawing.Size(151, 22);
+            this.tsl_path.Size = new System.Drawing.Size(190, 25);
             this.tsl_path.Text = "There will be a current path";
             // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(160, 28);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(38, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(48, 25);
             this.toolStripLabel2.Text = "View: ";
             // 
             // splitContainer1
@@ -111,7 +112,8 @@
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(12, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(16, 34);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -121,8 +123,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.lv_files);
-            this.splitContainer1.Size = new System.Drawing.Size(925, 455);
-            this.splitContainer1.SplitterDistance = 304;
+            this.splitContainer1.Size = new System.Drawing.Size(1233, 560);
+            this.splitContainer1.SplitterDistance = 405;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             this.splitContainer1.TabStop = false;
             // 
@@ -135,10 +138,11 @@
             this.tv_files.ImageKey = "drive.ico";
             this.tv_files.ImageList = this.il_DiscFoldersFilesIcons_Small;
             this.tv_files.LabelEdit = true;
-            this.tv_files.Location = new System.Drawing.Point(3, 3);
+            this.tv_files.Location = new System.Drawing.Point(4, 4);
+            this.tv_files.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tv_files.Name = "tv_files";
             this.tv_files.SelectedImageIndex = 3;
-            this.tv_files.Size = new System.Drawing.Size(302, 452);
+            this.tv_files.Size = new System.Drawing.Size(401, 555);
             this.tv_files.TabIndex = 0;
             // 
             // il_DiscFoldersFilesIcons_Small
@@ -162,10 +166,11 @@
             this.columnHeader3,
             this.columnHeader4});
             this.lv_files.LargeImageList = this.il_DiscFoldersFilesIcons_Large;
-            this.lv_files.Location = new System.Drawing.Point(3, 3);
+            this.lv_files.Location = new System.Drawing.Point(4, 4);
+            this.lv_files.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lv_files.MultiSelect = false;
             this.lv_files.Name = "lv_files";
-            this.lv_files.Size = new System.Drawing.Size(614, 452);
+            this.lv_files.Size = new System.Drawing.Size(817, 555);
             this.lv_files.SmallImageList = this.il_DiscFoldersFilesIcons_Small;
             this.lv_files.TabIndex = 0;
             this.lv_files.UseCompatibleStateImageBehavior = false;
@@ -219,9 +224,10 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Location = new System.Drawing.Point(363, 489);
+            this.button1.Location = new System.Drawing.Point(484, 602);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 21);
+            this.button1.Size = new System.Drawing.Size(100, 26);
             this.button1.TabIndex = 1;
             this.button1.Text = "Ok";
             this.button1.UseVisualStyleBackColor = true;
@@ -230,24 +236,27 @@
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.Location = new System.Drawing.Point(459, 489);
+            this.button2.Location = new System.Drawing.Point(612, 602);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 21);
+            this.button2.Size = new System.Drawing.Size(100, 26);
             this.button2.TabIndex = 2;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 527);
+            this.ClientSize = new System.Drawing.Size(1265, 649);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(400, 300);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(527, 358);
             this.Name = "Form1";
             this.Text = "Explorer";
             this.Load += new System.EventHandler(this.Form1_Load);
