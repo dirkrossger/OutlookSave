@@ -15,7 +15,25 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_012D76F90B7A471EBC15123830CBD89F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_09EC1258371843AB9C765DA1B05B01FB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0C9DA79FEB2A4272948EB346710AFA82"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -28,7 +46,7 @@
         "Entry"
         {
         "MsmKey" = "8:_21465352AF8D859FB829F5E85B5FF0A2"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -40,18 +58,12 @@
         "Entry"
         {
         "MsmKey" = "8:_2E6FEE2CACDEF81A1F210F36A69249E2"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_3CF4D9A7F1E64D7793CFF09B10B6B536"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_47529FC38C594141B6A40808FEB787B1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -64,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_4CBAD024CEB4A75D4D437AE117AFBF1A"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -88,13 +100,13 @@
         "Entry"
         {
         "MsmKey" = "8:_5AC59AA6883EFD55EB05F82AFAE6D8DB"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_61A6C53616387E55128450887BB6CF22"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -141,20 +153,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8BB71A12109045D7A5AC6F28B0328AB9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_93AAD0157E6A4117916ABE2D56183277"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_979705FC68B41B952E5EDCDEB6C9F8B2"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -172,7 +172,7 @@
         "Entry"
         {
         "MsmKey" = "8:_C2CDD262F839C9E32FFB93A7CCAEC116"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,7 +190,7 @@
         "Entry"
         {
         "MsmKey" = "8:_DC5E2270446CB7F45AD0D625373C21CD"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -202,7 +202,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_47529FC38C594141B6A40808FEB787B1"
+        "OwnerKey" = "8:_DC5E2270446CB7F45AD0D625373C21CD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_08610FF0F7E94F9ABB61EAD1372887CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -247,12 +253,6 @@
         "OwnerKey" = "8:_5AC59AA6883EFD55EB05F82AFAE6D8DB"
         "MsmSig" = "8:_UNDEFINED"
         }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DC5E2270446CB7F45AD0D625373C21CD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -261,7 +261,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\SetupOutlookSave.msi"
+        "OutputFilename" = "8:Debug\\SetupOutlookSave1.0.1.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -348,12 +348,52 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_012D76F90B7A471EBC15123830CBD89F"
+            {
+            "SourcePath" = "8:..\\bin\\Debug\\OutlookSave.vsto"
+            "TargetName" = "8:OutlookSave.vsto"
+            "Tag" = "8:"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_09EC1258371843AB9C765DA1B05B01FB"
             {
             "SourcePath" = "8:..\\FileExplorer\\icons\\blank.ico"
             "TargetName" = "8:blank.ico"
             "Tag" = "8:"
             "Folder" = "8:_43EF2101110E4A99A1BFC167F642060D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0C9DA79FEB2A4272948EB346710AFA82"
+            {
+            "SourcePath" = "8:..\\bin\\Debug\\OutlookSave.dll.manifest"
+            "TargetName" = "8:OutlookSave.dll.manifest"
+            "Tag" = "8:"
+            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -743,46 +783,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8BB71A12109045D7A5AC6F28B0328AB9"
-            {
-            "SourcePath" = "8:..\\bin\\Debug\\OutlookSave1.0.1.vsto"
-            "TargetName" = "8:OutlookSave1.0.1.vsto"
-            "Tag" = "8:"
-            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_93AAD0157E6A4117916ABE2D56183277"
-            {
-            "SourcePath" = "8:..\\bin\\Debug\\OutlookSave1.0.1.dll.manifest"
-            "TargetName" = "8:OutlookSave1.0.1.dll.manifest"
-            "Tag" = "8:"
-            "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_979705FC68B41B952E5EDCDEB6C9F8B2"
             {
             "AssemblyRegister" = "3:1"
@@ -1015,7 +1015,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OutlookSave"
         "ProductCode" = "8:{C5864267-881E-403C-8E2E-12D99B62E4A5}"
-        "PackageCode" = "8:{2593AE12-13AB-46D0-A701-3FEF6F1FD249}"
+        "PackageCode" = "8:{DFD465FE-EB33-4B29-8C9D-BA42995939DF}"
         "UpgradeCode" = "8:{6BCF106D-DDC4-42F3-B131-C4E0B372049D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1144,7 +1144,7 @@
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:[TARGETDIR]\\Infrasolutions\\OutlookSave\\OutlookSave1.0.1.vsto"
+                                                                    "Value" = "8:[TARGETDIR]\\Infrasolutions\\OutlookSave\\OutlookSave.vsto"
                                                                     }
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_7861060DB8B84EDBA182A4FC892F01D6"
                                                                     {
@@ -1591,9 +1591,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_47529FC38C594141B6A40808FEB787B1"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_08610FF0F7E94F9ABB61EAD1372887CF"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\OutlookSave1.0.1.dll"
+            "SourcePath" = "8:..\\obj\\Debug\\OutlookSave.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B6E8CBACD36F4DC5A8E59387A5251F9B"

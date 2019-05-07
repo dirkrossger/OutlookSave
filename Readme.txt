@@ -15,3 +15,6 @@ Create Favorite method to add paths
 v1.0.1
 *fileexplorer: implement registry save paths
 *form close
+
+2019-05-07
+*fixed install package v1.0.1
